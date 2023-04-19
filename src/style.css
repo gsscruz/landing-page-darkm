@@ -1,0 +1,123 @@
+html,
+body {
+  background: beige;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header {
+  border: 1px solid purple;
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navBar-items ul {
+  display: flex;
+}
+.heroImage {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+.features {
+  border: 1px solid black;
+}
+
+.secondHeroImage {
+  border: 1px solid red;
+}
+.testimonials {
+  border: 1px solid olive;
+  display: flex;
+  flex-direction: column;
+}
+.testimonial-card {
+  border: 1px dashed purple;
+}
+.testimonial-card-person {
+  display: flex;
+}
+.testimonial-card-person-id {
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  border: 1px solid indigo;
+}
+.footerContainer {
+  border: 1px solid orange;
+}
+
+.footer-links-firstPart ul,
+.footer-links-secondPart ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3px;
+}
+
+.footer-socialMedia ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main {
+  width: 100% !important;
+}
+@media screen and (min-width: 1000px) {
+  .heroImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .features > * {
+    width: 460px;
+  }
+  .secondHeroImage {
+    display: flex;
+    flex-direction: row;
+  }
+  .testimonials {
+    flex-direction: row;
+  }
+  .testimonial-card-person {
+    align-items: center;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-fieldContainer {
+    display: flex;
+  }
+  .footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    width: 19rem;
+  }
+  .footer-links {
+    display: flex;
+  }
+}
