@@ -4,10 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
 </head>
@@ -16,9 +22,7 @@
 
   <header>
     <div class="navBar">
-      <div class="navBar-icon">
-        pic
-      </div>
+      <img src="./images/logo.svg" class="navBar-icon" alt="company logo">
       <div class="navBar-items">
         <ul>
           <li>Features</li>
@@ -26,93 +30,93 @@
           <li>Sign In</li>
         </ul>
       </div>
-    </div>
+      </img>
   </header>
 
   <main>
     <section class="heroImage">
-      <div class="heroImage-img">
-        pic
-      </div>
+      <img src="./images/illustration-intro.png" class="heroImage-img" alt="illustration filling suitcase">
       <div class="heroImage-header">
-        All your files in one secure location, accessible anywhere.
+        <p>All your files in one secure location, accessible anywhere.</p>
       </div>
       <div class="heroImage-text">
         Fylo stores all your most important files in one secure location. Access them wherever
         you need, share and collaborate with friends family, and co-workers.
       </div>
       <div class="heroImage-btn">
-        Get Started
+        <p>
+          Get Started
+        </p>
       </div>
     </section>
 
     <section class="features">
-      <div class="features-first">
-        <div class="features-first-image">
-          pic
-        </div>
-        <div class="features-first-header">
+      <div class="features-first features-card">
+        <img src="./images/icon-access-anywhere.svg" alt="" class="features-first-image">
+        <div class="features-header">
           Access your files, anywhere
         </div>
-        <div class="features-first-text">
-          The ability to use a smartphone, tablet, or computer to access your account means your
-          files follow you everywhere.
-
+        <div class="features-text">
+          <p>The ability to use a smartphone, tablet, or computer to access your account means your
+            files follow you everywhere.
+          </p>
         </div>
       </div>
 
-      <div class="features-second">
-        <div class="features-second-image">pic</div>
-        <div class="features-second-header">
+      <div class="features-second features-card ">
+        <img src="./images/icon-security.svg" class="features-second-image" alt="">
+
+        <div class="features-header">
           Security you can trust
 
         </div>
-        <div class="features-second-text">
+        <div class="features-text">
           2-factor authentication and user-controlled encryption are just a couple of the security
           features we allow to help secure your files.
         </div>
       </div>
-      <div class="features-third">
-        <div class="features-third-image">pic</div>
-        <div class="features-third-header">
+      <div class="features-third features-card">
+        <img src="./images/icon-collaboration.svg" class="features-third-image" alt="">
+        <div class="features-header">
           Real-time collaboration
         </div>
-        <div class="features-third-text">
+        <div class="features-text">
           Securely share files and folders with friends, family and colleagues for live collaboration.
           No email attachments required.
         </div>
       </div>
-      <div class="features-fourth">
-        <div class="features-fourth-image">
-          pic
-        </div>
-        <div class="features-fourth-header">
+      <div class="features-fourth features-card">
+        <img src="./images/icon-any-file.svg" class="features-fourth-image" alt="">
+        <div class="features-header">
           Store any type of file
         </div>
-        <div class="features-fourth-text">
+        <div class="features-text">
           Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
           file types to be securely stored and shared.
         </div>
+        </img>
       </div>
+
     </section>
 
     <section class="secondHeroImage">
-      <div class="secondHeroImage-img">
-        pic
-      </div>
+      <img src="./images/illustration-stay-productive.png" class="secondHeroImage-img" alt="">
+
       <div class="secondHeroImage-header">
 
         Stay productive, wherever you are
       </div>
       <div class="secondHeroImage-text">
 
-        Never let location be an issue when accessing your files. Fylo has you covered for all of your file
-        storage needs.
-
-        Securely share files and folders with friends, family and colleagues for live collaboration. No email
-        attachments required.
+        <p> Never let location be an issue when accessing your files. Fylo has you covered for all of your file
+          storage needs.
+        </p>
+        <p>
+          Securely share files and folders with friends, family and colleagues for live collaboration. No email
+          attachments required.
+        </p>
         <span class="secondHeroImage-cta">
-          See how Fylo works
+          <p>See how Fylo works</p>
 
         </span>
       </div>
@@ -126,9 +130,7 @@
           become a well-oiled collaboration machine.
         </div>
         <div class="testimonial-card-person">
-          <div class="testimonial-card-person-picture">
-            🌚
-          </div>
+          <img src="./images/profile-1.jpg" class="testimonial-card-person-picture" alt="">
           <div class="testimonial-card-person-id">
             <div class="testimonial-card-person-id-name">
               Satish Patel
@@ -146,9 +148,8 @@
           become a well-oiled collaboration machine.
         </div>
         <div class="testimonial-card-person">
-          <div class="testimonial-card-person-picture">
-            🌚
-          </div>
+          <img src="./images/profile-2.jpg" class="testimonial-card-person-picture" alt="">
+
           <div class="testimonial-card-person-id">
             <div class="testimonial-card-person-id-name">
               Bruce McKenzie
@@ -165,10 +166,10 @@
           Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
           become a well-oiled collaboration machine.
         </div>
+
         <div class="testimonial-card-person">
-          <div class="testimonial-card-person-picture">
-            🌚
-          </div>
+          <img src="./images/profile-3.jpg" class="testimonial-card-person-picture" alt="">
+
           <div class="testimonial-card-person-id">
             <div class="testimonial-card-person-id-name">
               Iva Boyd
@@ -182,14 +183,16 @@
     </section>
 
     <section class="form">
-      <div class="form-header">Get early access today</div>
-      <div class="form-text">
-        It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
-        questions, our support team would be happy to help you.
-      </div>
-      <div class="form-fieldContainer">
-        <div class="form-fieldContainer-input">input</div>
-        <div class="form-fieldContainer-btn">Get Started For Free</div>
+      <div class="innerForm">
+        <div class="form-header">Get early access today</div>
+        <div class="form-text">
+          It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+          questions, our support team would be happy to help you.
+        </div>
+        <div class="form-fieldContainer">
+          <input placeholder="email@example.com" class="form-fieldContainer-input">
+          <div class="form-fieldContainer-btn">Get Started For Free</div>
+        </div>
       </div>
     </section>
   </main>
@@ -198,19 +201,20 @@
   <footer>
     <div class="footerContainer">
       <div class="footer-brand">
-        <div class="footer-brand-icon">pic</div>
-        <div class="footer-brand-address">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua
-        </div>
+        <img src="./images/logo.svg" class="footer-brand-icon">
       </div>
 
       <div class="footer-contacts">
+        <div class="footer-brand-address">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua
+          </p>
+        </div>
         <div class="footer-contacts-phone">
-          +1-543-123-4567
+          <p> +1-543-123-4567</p>
         </div>
         <div class="footer-contacts-email">
-          example@fylo.com
+          <p>example@fylo.com</p>
         </div>
       </div>
 
@@ -236,20 +240,16 @@
       </div>
       <div class="footer-socialMedia">
         <ul>
-          <li>F</li>
-          <li>T</li>
-          <li>I</li>
+          <li><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></li>
+          <li>
+            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+          </li>
         </ul>
       </div>
     </div>
-
-
-
-
-
-
-
-
   </footer>
 </body>
 
